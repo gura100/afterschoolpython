@@ -1,0 +1,32 @@
+# 1번
+r = float(input('반지름 : '))
+pi = 3.14
+
+둘레 = float(2) * pi * r
+면적 = pi * r * r
+
+print("원의 둘레 : ", 둘레)
+print("원의 면적 : ", 면적)
+
+# 2번
+price = float(input('책 값 : '))
+discount = float(input('할인율 : '))
+delivery = float(input('배송료 : '))
+
+결제금액 = price * ((100 - discount) / 100) + delivery
+print(결제금액)
+
+# 3번
+name = str(input('이름 : '))
+현재년 = int(input('현재년 : '))
+출생년 = int(input('출생년 : '))
+
+나이 = 현재년 - 출생년
+print(나이)
+
+# 4번
+year = int(input('년 : '))
+month = int(input('월 : '))
+day = int(input('일 : '))
+
+print(year,month,day,sep = " - ")
