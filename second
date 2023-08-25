@@ -1,0 +1,36 @@
+# 1
+month = int(input('현재 월을 입력하시오 : '))
+
+if month <= 5 and month >= 3 :
+    print("봄입니다.")
+elif month >= 6 and month <= 8 :
+    print("여름입니다.")
+elif month >= 9 and month <= 11 :
+    print("가을입니다.")
+elif month == 12 or month == 1 or month == 2 :
+    print("겨울입니다.")
+else :
+    print("문맥 파악 못해?")
+
+# 2
+num = int(input('숫자를 입력하시오. : '))
+
+if num % 5 == 0 and num % 4 != 0:
+    print('5의 배수입니다.')
+elif num % 4 == 0  and num % 5 != 0:
+    print('4의 배수입니다.')
+elif num % 20 == 0:
+    print('5와 4의 공배수입니다.')
+else :
+    print("5 또는 4의 배수가 아닙니다.")
+
+# 3
+eng = str(input("알파벳을 입력하시오. : "))
+모음 = ['a','e','i','o','u']
+알파벳 = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+if eng == 모음 and eng == 알파벳: 
+    print('모음입니다.')
+elif eng != 모음 and eng == 알파벳:
+    print('자음입니다.')
+else:
+    print("뭐하니")
