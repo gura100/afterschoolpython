@@ -1,0 +1,34 @@
+data = [-12, 3, -9, 5, 8, -2, 0, -8, 3, 10]
+
+data.sort(reverse=True)
+print(data)
+
+
+data = [-12, 3, -9, 5, 8, -2, 0, -8, 3, 10]
+
+data.insert(3, 100)
+print(data)
+
+
+data = [-12, 3, -9, 5, 8, -2, 0, -8, 3, 10]
+
+data.remove(-12)
+print(data)
+
+
+data = [-12, 3, -9, 5, 8, -2, 0, -8, 3, 10]
+a = data[0]
+for i in data:
+    if a < i:
+        a = i
+print(a)
+
+
+data = [-12, 3, -9, 5, 8, -2, 0, -8, 3, 10]
+
+while i < len(data):
+    if i % 2 != 0:
+        continue
+    else:
+        
+print(a)
