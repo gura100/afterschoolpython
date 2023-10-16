@@ -1,0 +1,16 @@
+import tkinter
+import random
+def click_btn():
+    label["text"] = random.choice(["극대노","대노","중노","소노","극소노"])
+root = tkinter.Tk()
+root.title("제비뽑기 프로그램")
+root.resizable(False, False)
+canvas = tkinter.Canvas(root, width=800, height=600)
+canvas.pack()
+g = tkinter.PhotoImage(file = "")
+canvas.create_image(400, 300, image=g)
+label = tkinter.Label(root, text="??", font=("Times New Roman", 120), bg="white")
+label.place(x=300, y=60)
+button = tkinter.Button(root, text="제비뽑기", font=("Times New Roman", 36), command=click_btn, fg="skyblue")
+button.place(x=360,y=400)
+root.mainloop()
